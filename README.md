@@ -1,6 +1,6 @@
 # base_decorator
 
-
+pip install base_decorator
 ```
 通用的装饰器基类，使写装饰器变得更简单。
 ```
