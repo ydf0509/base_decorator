@@ -1,0 +1,8 @@
+README.md
+setup.py
+base_decorator/__init__.py
+base_decorator.egg-info/PKG-INFO
+base_decorator.egg-info/SOURCES.txt
+base_decorator.egg-info/dependency_links.txt
+base_decorator.egg-info/requires.txt
+base_decorator.egg-info/top_level.txt
