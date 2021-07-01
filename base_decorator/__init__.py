@@ -78,6 +78,7 @@ if __name__ == '__main__':
 
     def common_deco(a=5, b=6):
         """  上面的逻辑如果用常规方式写"""
+
         def _inner(f):
             @functools.wraps(f)
             def __inner(*args, **kwargs):
