@@ -95,7 +95,7 @@ if __name__ == '__main__':
 
 
     @MyDeco(b=4)
-    # @common_deco(b=4)
+    # @common_deco(b=4)  # 这两个装饰器等效，二选一。
     def fun3(x):
         print(x)
         return x * 2
