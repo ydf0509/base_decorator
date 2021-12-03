@@ -15,7 +15,7 @@ class BaseDecorator(metaclass=abc.ABCMeta):
 
     为了一致性和省事，统一采用有参数装饰器，用户的装饰器后面必须带括号。
 
-
+    用户可以选择重写 before  after  when_exception 三个方法
     """
 
     # def __init__(self, *args, **kwargs):

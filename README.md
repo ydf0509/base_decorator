@@ -113,5 +113,5 @@ if __name__ == '__main__':
     print(fun3)
     print(fun3.__wrapped__)  # noqa
     print(fun3(10))
-
+    
 ```
