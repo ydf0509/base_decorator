@@ -11,7 +11,7 @@ print(filepath)
 
 setup(
     name='base_decorator',  #
-    version="0.1",
+    version="0.2",
     description=( 'base_decorator,make decorator easy to write'),
     keywords=("base_decorator",  ),
     # long_description=open('README.md', 'r',encoding='utf8').read(),
@@ -46,7 +46,7 @@ setup(
 python setup.py sdist upload -r pypi
 
 
-python setup.py sdist & twine upload dist/base_decorator-0.1.tar.gz
+python setup.py sdist & twine upload dist/base_decorator-0.2.tar.gz
 twine upload dist/*
 
 

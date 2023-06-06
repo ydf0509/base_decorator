@@ -2,6 +2,9 @@ import functools
 import abc
 import sys
 
+from typing import TypeVar
+
+F = TypeVar('F')
 
 class Undefind:
     pass
@@ -26,7 +29,7 @@ class BaseDecorator(metaclass=abc.ABCMeta):
     exc_info = Undefind()
     final_result = Undefind()  # 用户可以自己定义final_result的值，如果定义了就把这个值作为函数的结果，否则把函数原始结果作为结果。
 
-    def __call__(self, fun, *args, **kwargs):
+    def __call__(self, fun:F, *args, **kwargs) -> F:
         # print(locals())
         if not callable(fun) or args or kwargs:  # 正常是只有fun一个参数，除非是装饰器没加括号造成的。
             raise ValueError('为了简单和一致起见，所有装饰器都采用有参数装饰器，被装饰函数上面的装饰器后面别忘了加括号')
